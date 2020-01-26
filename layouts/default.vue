@@ -13,7 +13,7 @@ export default {
   name: "Default",
   methods: {
     handleClick() {
-      console.log("click")
+      this.$store.commit("auth/logout")
     }
   }
 }

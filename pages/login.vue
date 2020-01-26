@@ -10,7 +10,7 @@ export default {
   middleware: "guest",
   methods: {
     handleClick() {
-      console.log("click")
+      this.$store.commit("auth/login")
     }
   }
 }
