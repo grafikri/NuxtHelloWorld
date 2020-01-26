@@ -3,10 +3,21 @@
     <nuxt-link to="/">Home</nuxt-link>
     <nuxt-link to="/user">User</nuxt-link>
     <nuxt-link to="/login">Login</nuxt-link>
-    <nuxt-link to="/logout">Logout</nuxt-link>
+    <a @click.prevent="handleClick" href="#">Logout</a>
     <nuxt />
   </div>
 </template>
+
+<script>
+export default {
+  name: "Default",
+  methods: {
+    handleClick() {
+      console.log("click")
+    }
+  }
+}
+</script>
 
 <style>
 html {

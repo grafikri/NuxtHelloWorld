@@ -4,6 +4,7 @@
 
 <script>
 export default {
-  name: "User"
+  name: "User",
+  middleware: "auth"
 }
 </script>
