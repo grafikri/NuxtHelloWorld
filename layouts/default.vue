@@ -1,13 +1,17 @@
 <template>
-  <div>
+  <div style="text-align: center;padding-top: 15px;">
+    <nuxt-link to="/">Home</nuxt-link>
+    <nuxt-link to="/user">User</nuxt-link>
+    <nuxt-link to="/login">Login</nuxt-link>
+    <nuxt-link to="/logout">Logout</nuxt-link>
     <nuxt />
   </div>
 </template>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
