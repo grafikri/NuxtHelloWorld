@@ -7,6 +7,7 @@
 <script>
 export default {
   name: "Login",
+  middleware: "guest",
   methods: {
     handleClick() {
       console.log("click")
