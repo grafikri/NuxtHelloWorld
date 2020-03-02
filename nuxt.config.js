@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 export default {
   mode: "universal",
   /*
@@ -20,6 +22,13 @@ export default {
    ** Customize the progress-bar color
    */
   loading: { color: "#fff" },
+  /**
+   * Server configuration
+   */
+  server: {
+    HOST: process.env.HOST,
+    PORT: process.env.PORT
+  },
   /*
    ** Global CSS
    */
@@ -31,7 +40,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: ["@nuxtjs/dotenv"],
   /*
    ** Nuxt.js modules
    */
