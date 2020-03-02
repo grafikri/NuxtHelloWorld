@@ -1,13 +1,28 @@
 <template>
-  <div>
+  <div style="text-align: center;padding-top: 15px;">
+    <nuxt-link to="/">Home</nuxt-link>
+    <nuxt-link to="/user">User</nuxt-link>
+    <nuxt-link to="/login">Login</nuxt-link>
+    <a @click.prevent="handleClick" href="#">Logout</a>
     <nuxt />
   </div>
 </template>
 
+<script>
+export default {
+  name: "Default",
+  methods: {
+    handleClick() {
+      this.$store.commit("auth/logout")
+    }
+  }
+}
+</script>
+
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
