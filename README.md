@@ -29,8 +29,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - [x] Using middleware with auth user to guest pages
 - [x] inheriting Bootstrap variable
 - [x] Routing users according to auth users logged in variable
+- [x] .env file integration
 - [ ] Making all configuration on nuxtServerInit and plugins that needed by the app before run
 - [ ] Axios configuration as API
-- [ ] .env file integration
 - [ ] Atomic design integration
 - [ ] Using nuxt generate for static and dynamic pages
