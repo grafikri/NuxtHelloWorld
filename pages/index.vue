@@ -6,15 +6,8 @@
       <h2 class="subtitle">My shining Nuxt.js project</h2>
       <b-button variant="primary">Button</b-button>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
+        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
     </div>
   </div>
@@ -30,7 +23,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -46,7 +39,7 @@ export default {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  color: $myColor;
   letter-spacing: 1px;
 }
 
