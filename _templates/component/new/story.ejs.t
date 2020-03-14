@@ -1,5 +1,5 @@
 ---
-to: components/<%= name %>/index.stories.js
+to: <%= directory %>/<%= name %>/index.stories.js
 ---
 import <%= name %> from './index.vue'
 import { withKnobs, text, boolean } from '@storybook/addon-knobs'

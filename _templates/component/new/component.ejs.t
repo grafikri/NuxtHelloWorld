@@ -1,5 +1,5 @@
 ---
-to: components/<%= name %>/index.vue
+to: <%= directory %>/<%= name %>/index.vue
 ---
 <template>
   <div>
