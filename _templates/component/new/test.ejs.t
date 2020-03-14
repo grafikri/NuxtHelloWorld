@@ -1,5 +1,5 @@
 ---
-to: components/<%= name %>/index.test.js
+to: <%= directory %>/<%= name %>/index.test.js
 ---
 import <%= name %> from './index'
 import { mount } from '@vue/test-utils'
