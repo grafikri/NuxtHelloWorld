@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config()
 
 export default {
   mode: "universal",
@@ -36,7 +36,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "~/plugins/state_listeners", mode: "client" }],
+  plugins: [{ src: "~/plugins/state_listeners", mode: "client" }, { src: "~/plugins/custom_listener", mode: "client" }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -75,4 +75,4 @@ export default {
     },
     extractCSS: true
   }
-};
+}
