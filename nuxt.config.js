@@ -36,7 +36,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "~/plugins/state_listeners", mode: "client" }, { src: "~/plugins/custom_listener", mode: "client" }],
+  plugins: [{ src: "~/plugins/state_listeners", mode: "client" }, { src: "~/plugins/custom_scroll", mode: "client" }],
   /*
    ** Nuxt.js dev-modules
    */

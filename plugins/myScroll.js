@@ -1,8 +1,23 @@
-import Vue from 'vue'
 
-let arrStatus = []
+const install = function (Vue) {
+  Vue.directive("my-scroll", directive)
+}
 
-let getStatusChangesOfScroll = function (el) {
+const directive = {
+  inserted(el, binding) {
+    el.onscroll = (event) => {
+      const status = getStatusChangesOfScroll(event.target)
+      if (status !== "stable") {
+        binding.value(status)
+      }
+    }
+  }
+}
+
+
+const arrStatus = []
+
+const getStatusChangesOfScroll = function (el) {
 
   const { scrollTop, clientHeight, scrollHeight } = el
   let { distance } = el
@@ -27,14 +42,7 @@ let getStatusChangesOfScroll = function (el) {
 
 }
 
-Vue.directive("my-scroll", {
-  inserted(el, binding) {
-    el.onscroll = (event) => {
-      const status = getStatusChangesOfScroll(event.target)
-      if (status !== "stable") {
-        binding.value(status)
-      }
-    }
-  }
-})
+export default {
+  install
+}
 
