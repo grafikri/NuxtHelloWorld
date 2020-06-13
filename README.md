@@ -24,6 +24,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ### ToDo
 
 - [x] Storybook integration
+- [x] Storybook addon integration(viewport)
+- [x] Storybook custom webpack configuration
 - [x] Building basic auth user
 - [x] Using middleware with auth user to private pages
 - [x] Using middleware with auth user to guest pages

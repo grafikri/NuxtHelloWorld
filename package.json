@@ -8,6 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "docs:dev": "vuepress dev docs",
     "generate": "nuxt generate",
     "test": "jest",
     "storybook": "start-storybook"
@@ -36,6 +37,7 @@
     "sass-resources-loader": "^2.0.1",
     "vue-jest": "^4.0.0-0",
     "vue-loader": "^15.8.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.5.1"
   }
 }
